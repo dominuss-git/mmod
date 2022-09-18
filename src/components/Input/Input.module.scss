@@ -1,0 +1,51 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+
+.input {
+  outline: none;
+  border: none;
+  color: white;
+  background-color: transparent;
+  // border-bottom: 1px solid white;
+  padding: 0;
+  width: 100%;
+  caret-color: orange;
+  letter-spacing: 1px;
+  text-indent: 10px;
+  font-size: 20px;
+
+  &__label {
+    bottom: 32px;
+    position: absolute;
+    padding: 5px;
+    white-space: nowrap;
+    width: min-content;
+    color: orange;
+    background-color: #333;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    background-color: #333;
+    // border-radius: 5px;
+    border-top-left-radius: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    padding: 5px;
+  }
+}

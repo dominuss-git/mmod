@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 20px;
+
+  &__section {
+    border: 1px solid #333;
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    row-gap: 10px;
+  }
+}
+
+.output {
+  &__1 {
+    min-height: 75.5px;
+  }
+  &__2 {
+    min-height: 104px;
+  }
+  &__4 {
+    min-height: 104px;
+    &_grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}

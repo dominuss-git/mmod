@@ -1,0 +1,19 @@
+.button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 24px;
+  z-index: 10;
+
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: 300ms;
+
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    border-color: transparent;
+    color: #3498db;
+  }
+}

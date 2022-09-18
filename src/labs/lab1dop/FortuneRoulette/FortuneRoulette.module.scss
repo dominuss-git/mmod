@@ -1,0 +1,18 @@
+.pie {
+  width: 800px;
+  height: 800px;
+  transition: all 10s ease;
+
+  &__cursor {
+    height: 4px;
+    width: 40px;
+    position: absolute;
+    top: 398px;
+    right: 52px;
+    z-index: 10;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+}

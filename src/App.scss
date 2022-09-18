@@ -1,0 +1,27 @@
+body,
+html,
+#root {
+  margin: 0px;
+  padding: 0px;
+  background-color: #3498db;
+  height: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+
+ul {
+  margin: 0;
+  /* Отступ слева в браузере IE и Opera */
+  padding: 0;
+  /* Отступ слева в браузере Firefox, Safari, Chrome */
+}

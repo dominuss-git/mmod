@@ -7,6 +7,7 @@ import styles from './App.module.scss';
 import './App.scss';
 
 export const App = (): ReactElement => {
+  console.log('a')
   return (
     <BrowserRouter>
       <div className={styles.container}>

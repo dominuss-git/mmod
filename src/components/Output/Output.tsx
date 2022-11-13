@@ -19,9 +19,10 @@ export interface IOutputProps {
   sections?: Array<ISection>;
   classname?: string;
   wrapperClassname?: string;
+  label?: string;
 }
 
-export const Output = ({ sections, classname, wrapperClassname }: IOutputProps): ReactElement => {
+export const Output = ({ sections, classname, wrapperClassname, label }: IOutputProps): ReactElement => {
   const [currentPage, setPage] = useState<number | undefined>(1);
 
   const pages = useMemo<Array<number> | undefined>(() => {
@@ -41,6 +42,11 @@ export const Output = ({ sections, classname, wrapperClassname }: IOutputProps):
 
   return (
     <div className={[styles.output, wrapperClassname].join(' ')}>
+      {label && (
+        <label className={styles.output__title}>
+          {label}
+        </label>
+      )}
       {sections && currentPage && sections[currentPage - 1] && sections[currentPage - 1].title && (
         <span className={styles.output__label}>{sections[currentPage - 1].title}</span>
       )}

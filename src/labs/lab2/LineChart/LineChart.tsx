@@ -1,6 +1,6 @@
 import { Line, ResponsiveLine } from '@nivo/line';
 
-interface IDot {
+export interface IDot {
   x: number;
   y: number;
 }
@@ -10,14 +10,16 @@ export interface ILine {
   data: Array<IDot>;
 }
 
-interface ILineChartProps {
+export interface ILineChartProps {
   data: Array<ILine>;
   noPaddings?: boolean;
   padding?: number;
   length?: number;
+  cardinal?: boolean
+  max?: number
 }
 
-export const LineChart = ({ data, noPaddings, padding, length }: ILineChartProps) => {
+export const LineChart = ({ data, noPaddings, padding, length, cardinal, max = 1 }: ILineChartProps) => {
   console.log(data)
   return(
     <Line
@@ -39,7 +41,7 @@ export const LineChart = ({ data, noPaddings, padding, length }: ILineChartProps
       xScale={{
         type: 'linear',
         min: 0,
-        max: 1,
+        max: max,
       }}
       yScale={{
         type: 'linear',
@@ -50,13 +52,14 @@ export const LineChart = ({ data, noPaddings, padding, length }: ILineChartProps
       height={600}
       width={
         padding
-          ? 1000 - padding
+          ?700 - padding
           : noPaddings
           ? length
-            ? 1000 - (length > 95 ? length - 50 : length - 60)
-            : 1000
-          : 960
+            ? 700 - (length > 95 ? length - 50 : length - 60)
+            : 700
+          : 660
       }
+      curve={cardinal ? 'monotoneX': 'linear'}
       yFormat=" >-.2f"
       axisTop={null}
       axisRight={null}

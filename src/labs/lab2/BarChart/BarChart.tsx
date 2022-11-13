@@ -6,7 +6,7 @@ export interface IBarChartElement {
   distribution: number;
 }
 
-interface IBarChartProps {
+export interface IBarChartProps {
   data: Array<IBarChartElement>;
 }
 
@@ -24,7 +24,7 @@ export const BarChart = ({ data }: IBarChartProps): ReactElement => {
       colors={{ scheme: 'nivo' }}
       colorBy="indexValue"
       // @ts-ignore
-      width={1000}
+      width={700}
       // @ts-ignore
       height={600}
       // fill={[

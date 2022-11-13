@@ -2,6 +2,19 @@
   background-color: #333;
   padding: 10px;
   border-radius: 10px;
+  position: relative;
+
+  &__title {
+    bottom: 32px;
+    position: absolute;
+    padding: 5px;
+    white-space: nowrap;
+    width: min-content;
+    color: orange;
+    background-color: #333;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
 
   &__grid {
     display: grid;

@@ -1,0 +1,71 @@
+.rotate {
+  // transform: rotate(90deg);
+  // height: 27px;
+  width: min-content;
+  // transform-origin: bottom left;
+  // margin-bottom: 180px;
+  height: 30px;
+
+  &[data-deggre='45'] {
+    position: absolute;
+    // transform: rotate(105deg);
+    // margin-left: 80px;
+    
+    transform: rotate(115deg);
+    width: 600px;
+    top: 250px;
+    left: -100px;
+
+    div {
+      top: 20px
+    }
+  }
+
+  &[data-deggre='90'] {
+    transform: rotate(90deg);
+    width: 200.95px;
+    left: -250px;
+    top: 60px;
+  }
+
+  &[data-deggre='902'] {
+    transform: rotate(90deg);
+    width: 200.95px;
+    left: -455px;
+    top: 360px;
+  }
+
+  &[data-deggre='2'] {
+    position: absolute;
+    left: 20px;
+    top: 150px
+  }
+
+  &[data-deggre='270'] {
+    transform: rotate(270deg);
+    left: -70px;
+    top: 60px;
+    width: 200.95px;
+    // margin-top: -80px;
+    // margin-left: 80px;
+    // width: 200px
+  }
+
+  &[data-deggre='2702'] {
+    transform: rotate(270deg);
+    left: -670px;
+    top: 360px;
+    width: 200.95px;
+    // margin-top: -80px;
+    // margin-left: 80px;
+    // width: 200px
+  }
+
+  &__other {
+    &_circle {
+      position: absolute;
+      left: -10px;
+      top: 460px;
+    }
+  }
+}

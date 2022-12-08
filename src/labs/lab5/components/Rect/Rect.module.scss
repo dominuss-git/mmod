@@ -1,0 +1,14 @@
+.rect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    margin-top: -5px;
+    margin-left: -25px;
+  }
+
+  &__title {
+    // color: white
+  }
+}

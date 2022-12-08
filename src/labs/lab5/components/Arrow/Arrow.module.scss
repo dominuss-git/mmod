@@ -1,0 +1,23 @@
+.arrow {
+  position: relative;
+
+  &__marker {
+    position: absolute;
+    visibility: hidden;
+    top: -5px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    // background-color: black;\
+    // background-image: url('../../assets/dat.svg');
+    // border-radius: 100%;
+  }
+
+  &__marker[data-visible='true'] {
+    visibility: visible;
+
+    margin-left: 90%;
+
+    transition: 1s margin-left;
+  }
+}

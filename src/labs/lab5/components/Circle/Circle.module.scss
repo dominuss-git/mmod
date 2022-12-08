@@ -1,0 +1,29 @@
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__counter {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+
+  &__title {
+    // color: white
+  }
+
+  &__count {
+    // color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    // margin: auto;
+    // // margin-right: auto;
+    // left: 0;
+    // right: 0;
+    top: 41px;
+    // bottom: 10px;
+    text-align: center;
+  }
+}

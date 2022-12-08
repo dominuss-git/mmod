@@ -1,0 +1,123 @@
+.rotate2 {
+  position: absolute;
+
+  &[data-d='P1S1'] {
+    top: 260px;
+    left: 80px;
+  }
+
+  &[data-d='S1P2'] {
+    transform: rotate(-45deg);
+    top: 200px;
+    left: 245px;
+  }
+
+  &[data-d='S1P6'] {
+    top: 260px;
+    left: 265px;
+  }
+
+  &[data-d='S1P3'] {
+    transform: rotate(45deg);
+    top: 320px;
+    left: 240px;
+  }
+
+  &[data-d='S4P1'] {
+    top: 260px;
+    left: 690px;
+  }
+
+  &[data-d='S4P12'] {
+    top: 260px;
+    left: -160px;
+  }
+
+  &[data-d='P2S2'] {
+    top: 135px;
+    left: 460px;
+  }
+
+  &[data-d='S2P4'] {
+    top: 135px;
+    left: 645px;
+  }
+
+  &[data-d='S3P5'] {
+    top: 395px;
+    left: 640px;
+  }
+
+
+  &[data-d='P3S3'] {
+    top: 395px;
+    left: 445px;
+  }
+
+  &[data-d='P4S4'] {
+    transform: rotate(135deg);
+    top: 195px;
+    left: 665px;
+  }
+
+  &[data-d='P6S4'] {
+    top: 260px;
+    left: 495px;
+  }
+
+  &[data-d='P5S4'] {
+    transform: rotate(-135deg);
+    top: 310px;
+    left: 670px;
+  }
+
+  &[data-d='s1'] {
+    left: 240px;
+    top: 200px;
+  }
+
+  &[data-d='s2'] {
+    top: 80px;
+    left: 620px;
+  }
+
+  &[data-d='s3'] {
+    top: 335px;
+    left: 610px;
+  }
+
+  &[data-d='s4'] {
+    top: 200px;
+    left: 660px;
+  }
+
+  &[data-d='1'] {
+    // left: 400px;
+    top: 200px;
+  }
+
+  &[data-d='2'] {
+    left: 380px;
+    top: 80px;
+  }
+
+  &[data-d='3'] {
+    left: 370px;
+    top: 340px;
+  }
+
+  &[data-d='4'] {
+    left: 800px;
+    top: 80px;
+  }
+
+  &[data-d='5'] {
+    left: 800px;
+    top: 340px;
+  }
+
+  &[data-d='6'] {
+    left: 420px;
+    top: 205px;
+  }
+}

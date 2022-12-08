@@ -1,0 +1,156 @@
+.rotate2 {
+  position: absolute;
+
+  &[data-d='1'] {
+    top: 440px;
+    left: 135px;
+  }
+
+  &[data-d='2'] {
+    top: 440px;
+    left: 335px;
+  }
+
+  &[data-d='3'] {
+    top: 320px;
+    left: 710px;
+  }
+  &[data-d='4'] {
+    top: 440px;
+    left: 665px;
+  }
+  &[data-d='5'] {
+    top: 566px;
+    left: 710px;
+  }
+
+  &[data-d='6'] {
+    top: 320px;
+    left: 1040px;
+  }&[data-d='7'] {
+    top: 566px;
+    left: 1040px;
+  }
+
+  &[data-d='S4P1'] {
+    top: 440px;
+    transform: rotate(45deg);
+  }
+
+  &[data-d='S5P1'] {
+    transform: rotate(-45deg);
+    top: 550px;
+  }
+
+  &[data-d='P1S1'] {
+    top: 420px;
+    transform: rotate(-20deg);
+    left: 200px;
+    width: 350px;
+    div {
+      top: 5px;
+    }
+  }
+  &[data-d='P1S2'] {
+    transform: rotate(20deg);
+    top: 550px;
+    left: 200px;
+    width: 350px;
+    div {
+      top: 5px;
+    }
+  }
+
+  &[data-d='S2P2'] {
+    transform: rotate(-135deg);
+    top: 550px;
+    left: 390px;
+  }
+  &[data-d='P2S1'] {
+    transform: rotate(-45deg);
+    top: 440px;
+    left: 390px;
+  }
+
+  &[data-d='S1P3'] {
+    top: 380px;
+    left: 555px;
+  }
+  &[data-d='S1P4'] {
+    transform: rotate(45deg);
+    top: 435px;
+    left: 530px;
+  }
+  &[data-d='S2P5'] {
+    top: 620px;
+    left: 555px;
+  }
+  &[data-d='P4S2'] {
+    transform: rotate(135deg);
+    top: 560px;
+    left: 530px;
+  }
+
+  &[data-d='P3S3'] {
+    transform: rotate(45deg);
+    top: 430px;
+    left: 760px;
+  }
+  &[data-d='P5S3'] {
+    transform: rotate(-45deg);
+    top: 570px;
+    left: 765px;
+  }
+
+  &[data-d='S3P6'] {
+    transform: rotate(-45deg);
+    top: 445px;
+    left: 910px;
+  } 
+  &[data-d='S5P7'] {
+    transform: rotate(45deg);
+    top: 560px;
+    left: 905px;
+  }
+
+  &[data-d='S4P12'] {
+    top: 380px;
+    left: 1305px;
+  }
+  &[data-d='S5P12'] {
+    top: 626px;
+    left: 1310px;
+  }
+
+  &[data-d='P6S4'] {
+    top: 380px;
+    left: 1115px;
+  }
+  &[data-d='P7S5'] {
+    top: 626px;
+    left: 1115px;
+  }
+
+  &[data-d='S1'] {
+    top: 320px;
+    left: 530px;
+  }
+
+  &[data-d='S2'] {
+    top: 560px;
+    left: 530px;
+  }
+  &[data-d='S3'] {
+    top: 440px;
+    left: 905px;
+  }
+  &[data-d='S4'] {
+    top: 320px;
+    left: 1280px;
+  }
+
+  &[data-d='S5'] {
+    top: 566px;
+    left: 1280px;
+  }
+}
